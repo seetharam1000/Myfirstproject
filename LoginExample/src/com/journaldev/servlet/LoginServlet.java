@@ -26,13 +26,12 @@ public class LoginServlet extends HttpServlet {
     	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		
-		
 		//get servlet config init params
 		String userID = "admin";
 		String password = "admin";
 		//logging example
 		
+		System.out.println("This is changes---");
 		
 		if(userID.equals("admin") && password.equals("admin")){
 			response.sendRedirect("LoginSuccess.jsp");
